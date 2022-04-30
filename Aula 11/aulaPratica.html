@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Pratica</title>
+    <h2>Paises</h2>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(51, 134, 167);
+            font: normal 18pt Arial;
+        }
+    </style>
+    Digite seu país: <input id= 'txtpais'> <input type="button" value="Enviar" onclick="funcao()">
+    <div id= 'res'>
+
+    </div>
+    <script>
+        var pais = window.document.getElementById('txtpais')
+        var res = window.document.getElementById('Enviar')
+        function funcao(){
+        if(res == 'brasil'){
+            res.innerHTML +=('voce e brasileiro')
+        }else{
+            res.innerHTML +=('voce e estrangeiro')
+        }
+    }
+    </script>
+</body>
+</html>
