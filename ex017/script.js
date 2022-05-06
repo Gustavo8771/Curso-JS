@@ -1,7 +1,5 @@
 function iniciar(){
-    let numero = Number.document.getElementById('num')
-    let sel = document.getElementById('select')
-    if (numero <= 0){
-        window.alert('deu zebra ai amigao')
-    }
+    let numero = window.document.getElementById('num')
+    let res = window.document.getElementById('res')
+    window.document.res(`${numero.innerText}`)
 }

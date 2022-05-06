@@ -11,7 +11,7 @@
         }
         input{
             font: normal 18pt Arial;
-            width: 100pt;
+            width: 100px;
         }
         div#res{
             margin-top: 20px;
@@ -32,8 +32,7 @@
         var res = window.document.getElementById('res')
         var n1 = Number(tn1.value)
         var n2 = Number(tn2.value)
-        var s = n1 + n2
-        res.innerHTML = `A soma dos valores ${n1} e ${n2} é igual a  <strong>${s}<strong>`
+        res.innerHTML = `A soma dos valores ${n1} e ${n2} é igual a  <strong>${n1 + n2}<strong>`
         }
     </script>
 </body>

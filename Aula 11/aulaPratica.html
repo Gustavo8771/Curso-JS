@@ -13,19 +13,22 @@
             background-color: rgb(51, 134, 167);
             font: normal 18pt Arial;
         }
+        p#inline {
+            display: inline-block;
+        }
     </style>
-    Digite seu país: <input id= 'txtpais'> <input type="button" value="Enviar" onclick="funcao()">
+    <p id="inline">Digite seu país:</p> <input id="txtpais"> <input type="button" value="Enviar" onclick="funcao()">
     <div id= 'res'>
 
     </div>
     <script>
         var pais = window.document.getElementById('txtpais')
-        var res = window.document.getElementById('Enviar')
-        function funcao(){
-        if(res == 'brasil'){
-            res.innerHTML +=('voce e brasileiro')
+        var res = window.document.getElementById('res')
+        function funcao() {
+        if(pais == 'brasil'){
+            res.innerHTML +=('<p>voce e brasileiro</p>')
         }else{
-            res.innerHTML +=('voce e estrangeiro')
+            res.innerHTML +=('<p>voce e estrangeiro</p>')
         }
     }
     </script>
